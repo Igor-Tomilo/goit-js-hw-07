@@ -8,3 +8,5 @@
 
 // Категория: Животные
 // Количество элементов: 4
+const elemRef = document.querySelector('ul#categories');
+console.log(elemRef.children);
