@@ -7,11 +7,13 @@
 const valueRef = document.querySelector('#value');
 const increaseBtn = document.querySelector('button[data-action="increment"]');
 const decreaseBtn = document.querySelector('button[data-action="decrement"]');
+
 const increase = () => {
   valueRef.textContent = Number(valueRef.textContent) + 1;
 };
 const decrease = () => {
   valueRef.textContent = Number(valueRef.textContent) - 1;
 };
+
 increaseBtn.addEventListener('click', increase);
 decreaseBtn.addEventListener('click', decrease);
