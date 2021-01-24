@@ -19,3 +19,11 @@ const images = [
     alt: 'Group of Horses Running',
   },
 ];
+
+const gallaryRef = document.querySelector('#gallery');
+const makeImgMarkUp = imgObj => {
+  const { url, alt } = imgObj;
+  return `<li><img src ='${url}' alt ='${alt}' width = '250'></li>`;
+};
+const newFilledGallary = images.map(image => makeImgMarkUp(image)).join('');
+gallaryRef.insertAdjacentHTML('beforeend', newFilledGallary);

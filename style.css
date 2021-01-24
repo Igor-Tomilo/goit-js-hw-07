@@ -11,3 +11,6 @@
   border-color: #f44336;
 }
 /* Конец задание 6 */
+#gallery {
+  list-style: none;
+}
